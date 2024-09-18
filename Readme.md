@@ -1,0 +1,1 @@
+crear perfiles donde cada perfil tiene sus rangos en distintos juegos.
