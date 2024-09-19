@@ -12,6 +12,15 @@ const ClashOfClansStatsSchema = new Schema({
   defenseWins: Number
 }, { _id: false });
 
+const LeagueOfLegendsStatsSchema = new Schema({
+  tag: String,
+  username: String,
+  rango: String, 
+  lp: String,
+  winLose: String,
+  winrate: String
+}, {_id: false});
+
 const UserSchema = new Schema({
   username: {
     type: String,
@@ -29,7 +38,7 @@ const UserSchema = new Schema({
     {
       game: { type: String, required: true },
       clashOfClans: ClashOfClansStatsSchema,
-      rocketLeague: RocketLeagueStatsSchema,
+      leagueOfLegends: LeagueOfLegendsStatsSchema
     }
   ]
 });
